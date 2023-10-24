@@ -3,41 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>working with divs</title>
-    <!--this is internal css-->
+    <title>working wiz divs</title>
     <style>
-       .parentdiv{
-        background-color: greenyellow;
-        width: 7o%;
-        height: 50%;
-        float: left;
-       }
-        }.childone{
-            background-color: darkblue;
-            padding-top: 40px;
+        body{
+            background-color: gold;
+        }
+
+        .parentdiv{
+            background-color: violet;
+            font-size: x-large;
+            font-style: italic;
+            border: dashed;
+        }
+        .childone{
+            background-color: mediumblue;
+            font-size: xx-large;
+            font-style: oblique;
+            float: left;
+            border: dashed;
         }
         .childtwo{
-            background-color: deeppink;
-            padding: 50%;
+            background-color:yellow ;
+            font-style: oblique;
+            float: right;
+            border: dashed;
+            height: 220px;
+            width: 500px;
         }
     </style>
 </head>
 <body>
     <div>
-        <div class="parentdiv">
-        <h1>working with div</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus perferendis nam, dolores, quam facilis iste veritatis rem odio consectetur animi fugiat distinctio nulla dolore in pariatur? Et quibusdam atque sit!</p>
-        /div>
-            <!--inested div-->
-            <div class="childone">
-                <h2>div 1</h2>
-            </div>
+        <!--this is parentdiv-->
         <div>
-            <!--inested div-->
-            <div class="childtwo">
-                <h3>div 2</h3>
+            <div class="parentdiv">
+              <h1>working with div</h1>
+              <p>parentdiv</p>
             </div>
-
+        </div>
+        <div>
+            <!--this is nested divone-->
+            <div class="childone">
+             <h1>importance of divs</h1>
+             <p>divs divide sections in a webpage</p>
+            </div>
+        </div>
+        <div>
+            <!--this is nested divtwo-->
+            <div class="childtwo">
+                <h1>more about divs</h1>
+                <p>divs can be floated</p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
